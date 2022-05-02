@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Python無料学習会 | プログラミング学習コミュニティ</title>
+<meta property="og:url" content="https://wmghub.github.io/hifive/">
+<meta property="og:title" content="Python無料学習会 | プログラミング学習コミュニティ">
+<meta property="og:type" content="website">
+<meta property="og:description" content="プログラミングの未経験者からビギナーまでプログラミングができるようになるまでをサポートします">
+<meta name="keywords" content="Python学習会,プログラミング無料学習,プログラミング学習コミュニティ,プログラミングビギナーの情報交換,プログラミング情報の共有">
+<meta name="description" content="プログラミングの未経験射からビギナーまでプログラミングができるようになるまでをサポートします">
+<meta name="author" content="hifive">
+<meta name="og:image" content="https://wmghub.github.io/hifive/images/hifive_TwitterLargeCard.png">
+<meta name="twitter:image" content="https://wmghub.github.io/hifive/images/hifive_TwitterLargeCard.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@hifive">
+<meta name="twitter:creator" content="@hifive">
+
+<script src="js/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="css/flickity.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+
+<style type="text/css">
+<!--
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f3f3;
+}
+.gallery {
+  background: #FFF;
+}
+.gallery-cell {
+  width: 33%;
+  height: 620px;
+  margin-right: 10px;
+  background: #24C2F9;
+//  counter-increment: gallery-cell;
+}
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+//  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.yokonarabe > div {
+  margin: 0;
+  background: #f3f3f3;
+}
+.yokonarabe > div img {
+  max-width: 100%;
+}
+.yokonarabe > div.column > ul {
+  list-style: none;
+  padding-left: 6em;
+  padding-right: 6em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.yokonarabe > div.column > ul > li {
+  padding-left: 1em;
+  font-size: 40px;
+  color: #777;
+}
+@media(min-width: 800px) {
+  .yokonarabe {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+  .yokonarabe > div.lead {
+    width: calc(75%);
+    font-size:1.75em;
+    line-height:2.00em;
+    padding:1.2em;
+    font-weight:900;
+    background:#e7e7e7;
+  }
+  .yokonarabe > div.single {
+    width: 100%;
+  }
+  .yokonarabe > div.single img {
+    width: 100%;
+    object-fit:cover;
+  }
+  .yokonarabe > div.column {
+    width: 100%;
+  }
+  .yokonarabe > div.column img {
+  }
+  .yokonarabe > div {
+    width: 50%;
+  }
+  .yokonarabe img {
+    max-width: 100%;
+  }
+}
+#cardlayout-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    margin: 2em auto;
+    max-width: 960px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+/* リンクテキストの下線を非表示 */
+a.card-link {
+    text-decoration: none;
+}
+
+/* カードレイアウト内の画像を幅いっぱいに表示 */
+#cardlayout-wrap img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* カードレイアウトのタイトル部分 */
+.card-title {
+    margin: 0.6em 0 0;
+    color: #333;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+/* カードレイアウトの説明文部分 */
+.card-text-tax {
+    margin: 0;
+    padding: 1em;
+    color: #818181;
+}
+
+/* カードレイアウトを1カラムで配置 */
+.card-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+.icontrim {
+    position:relative;
+    overflow: hidden;
+    background-color: #fff;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+.icontrim img {
+    object-fit: contain;
+    top: 40px;
+    left: 40px;
+    max-height:100%;
+}
+.leccard {
+    width: 360px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+  }
+.leccard-img {
+    /* border-radius: 5px 5px 0 0; */
+    width: 360px;
+    height: 240px;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 240px;
+}
+.leccard-content {
+    padding: 20px;
+}
+.leccard-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+.leccard-text {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.leccard-link {
+    padding: 6px 12px 8px 12px;
+    text-align: left;
+    line-height: 1.6em;
+    border-top: 1px solid #eee;
+}
+.leccard-link a {
+    text-decoration: none;
+    color: #0bd;
+    margin: 0 10px;
+}
+.leccard-link a:hover {
+    color: #0090aa;
+}
+.leccard-link ul {
+    list-style: none;
+    padding-left: 0.2em;
+    padding-right: 1.2em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.leccard-link ul > li {
+    padding-left: 0.1em;
+    font-size: 10px;
+    color: #777;
+}
+
+@media all and (min-width: 768px) {
+    .lead {
+      margin: auto;
+      max-width: 960px;
+      width: calc(75%);
+    }
+}
+
+/* 画面幅768px以上の場合カードレイアウトを2カラムで配置 */
+@media all and (min-width: 768px) {
+    .card-list {
+        margin: 0.5em 0;
+        width: calc(100% / 2); /* 100%幅を2で割るという指定 */
+    }
+}
+
+@media all and (min-width: 992px) {
+    .lead {
+      margin: auto;
+      max-width: 2060px;
+      width: calc(75%);
+    }
+}
+
+/* 画面幅992px以上の場合カードレイアウトを3カラムで配置 */
+@media all and (min-width: 992px) {
+    .card-list {
+        width: calc(100% / 3); /* 100%幅を3で割るという指定 */
+    }
+    
+/* 最後の行が3列より少ない場合左寄せにレイアウトさせる */
+    #cardlayout-wrap::after{
+        content: "";
+        display: block;
+        width: calc(100% / 3);
+    }
+}
+-->
+</style>
+</head>
+<body>
+<div class="yokonarabe">
+  <div class="single" >
+    <img src="images/hifive.svg" >
+  </div>
+</div>
+<br><br>
+<div class="yokonarabe" style="background:#e7e7e7;">
+  <div class="lead" style="margin:auto;">
+    Pythonの基礎から独習できるようになるまでをサポートします<br>
+    <span style="font-weight:900; color:#053ec3;">完全オンライン</span>、<span style="font-weight:900; color:#053ec3;">完全無料</span>です<br>
+    通信費以外の費用は一切かかりません。教材費、ほかソフト代などは不要です<br>
+    <span style="font-weight:900; color:#053ec3;">パソコン</span>と<span style="font-weight:900; color:#053ec3;">Googleアカウント</span>があれば始められます<br>
+    テキストは東京大学の<span style="font-weight:900; color:#053ec3;">〈Pythonプログラミング入門〉</span>を元に一部改訂しました<br>
+  </div>
+</div>
+
+<div class="yokonarabe">
+  <div id="cardlayout-wrap"><!-- カードレイアウトをラッピング -->
+    <section class="card-list" style="background-color:#fff;" >
+        <a class="card-link" href="#">
+            <figure class="card-figure" style="height:120px;" ><img style="margin-top:40px;" src="images/python.svg"></figure>
+            <h2 class="card-title">python</h2>
+            <p class="card-text-tax">基礎から機械学習のとりかかりまでを学んで独習できるようになるまで</p>
+        </a>
+    </section>
+    <section class="card-list" style="background-color:#fff;" >
+        <a class="card-link" href="#">
+            <figure class="card-figure"><img width="100%" src="images/jupyter.svg"></figure>
+            <h2 class="card-title">jupyter</h2>
+            <p class="card-text-tax">Jupyterノートブックを使ってPythonを学習していきます</p>
+        </a>
+    </section>
+    <section class="card-list" style="background-color:#fff;" >
+        <a class="card-link" href="#">
+            <figure class="card-figure"><img width="100%" src="images/github-ar21.svg"></figure>
+            <h2 class="card-title">github</h2>
+            <p class="card-text-tax">github.comを使ってソースコードを管理します</p>
+        </a>
+    </section>
+    <section class="card-list" style="background-color:#fff;" >
+        <a class="card-link" href="#">
+            <figure class="card-figure" style="height:160px;" ><img style="margin-left:80px; height:160px;" src="images/playwright.svg"></figure>
+            <h2 class="card-title">Playwright</h2>
+            <p class="card-text-tax">ウェブページをスクレイピングしてみます</p>
+        </a>
+    </section>
+    <section class="card-list" style="background-color:#fff;" >
+        <a class="card-link" href="#">
+            <figure class="card-figure" style="height:160px;" ><img src="images/scikit-learn.svg"></figure>
+            <h2 class="card-title">scikit-learn</h2>
+            <p class="card-text-tax">線形回帰、決定木などさまざまなモデルを作成します</p>
+        </a>
+    </section>
+    <section class="card-list" style="background-color:#fff;" >
+        <a class="card-link" href="#">
+            <figure class="card-figure" style="height:160px;" ><img src="images/google-sheets.svg"></figure>
+            <h2 class="card-title">Googleシート</h2>
+            <p class="card-text-tax">Googleシートを使ってデータを入出力します</p>
+        </a>
+    </section>
+  </div><!-- カードレイアウトをラッピング -->
+</div>
+
+<div class="yokonarabe">
+  <div>
+    <div style="margin:auto;width:360px;">
+    <h2><strong>学習会の目的</strong></h2><br>
+    <h3>
+    ─&nbsp;将来のITエンジニア育成の一助<br>
+    <br>
+    ─&nbsp;学生のコンピューター能力の向上<br>
+    <br>
+    ─&nbsp;今後の第４次産業の従事者の底上げ<br>
+    <br>
+    ※&nbsp;参加には主催者の承認が必要です<br>
+    </h3>
+    <center>
+    <a href="https://docs.google.com/forms/d/18DTpXCc-yDVJ_ROcB4NmYC4S2iZKtmiXI8PTWK24ZCU/edit"><img src="images/button.svg" style="width:270px;height:140px;text-align:center;"></a>
+    </center>
+    </div>
+  </div>
+  <div>
+    <img src="images/goodjob.svg" >
+  </div>
+</div>
+
+<div class="yokonarabe">
+  <div class="single" >
+<!-- Carousel -->
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' style="margin-bottom: 40px;" >
+      <div class="gallery-cell" style="padding-top:2em; background: #ffffff;">
+        <section class="leccard">
+              <img class="leccard-img" style="object-fit: contain;" src="images/python.svg" alt="">
+              <div class="leccard-content">
+                  <h1 class="leccard-title">Python学習会でやること</h1>
+                  <p class="leccard-text">オンラインで全7回です<br>Python Jupyterノートブックを使います<br>機械学習の入門までを想定しています</p>
+              </div>
+              <div class="leccard-link" style="background:#f7f7f7;">
+                  <span style="font-size:0.6em; color:#18acd5" >学習すること</span>
+                  <ul>
+                  <li><div class="icontrim"><img src="images/python-icon.svg"></div></li>
+                  <li><div class="icontrim"><img src="images/github-icon.svg"></div></li>
+                  <li><div class="icontrim"><img src="images/playwright.svg"></div></li>
+                  <li><div class="icontrim"><img style="height:30px;" src="images/googlesheet-icon.svg"></div></li>
+                  <li><div class="icontrim"><img style="height:30px;" src="images/scikit-learn.svg"></div></li>
+                  </ul>
+              </div>
+            </section>
+      </div>
+
+      <div class="gallery-cell" style="padding-top:2em; background: #ffffff;">
+        <section class="leccard">
+              <img class="leccard-img" src="images/1.var_func.png" alt="">
+              <div class="leccard-content">
+                  <h1 class="leccard-title">第1回&nbsp;算術・変数と関数・比較</h1>
+                  <p class="leccard-text">gitでファイルをダウンロード、Jupyterノートブックで簡単な算術計算をします。変数や関数の基礎、論理演算について</p>
+              </div>
+              <div class="leccard-link" style="background:#f7f7f7;">
+                  <span style="font-size:0.6em; color:#18acd5" >学習すること</span>
+                  <ul>
+                  <li><div class="icontrim"><img src="images/python-icon.svg"></div></li>
+                  <li><div class="icontrim"><img src="images/github-icon.svg"></div></li>
+                  </ul>
+              </div>
+            </section>
+      </div>
+
+      <div class="gallery-cell" style="padding-top:2em; background: #ffffff;">
+        <section class="leccard">
+              <img class="leccard-img" src="images/2.string_list.png" alt="">
+              <div class="leccard-content">
+                  <h1 class="leccard-title">第2回&nbsp;文字列・リスト・条件分岐<br></h1>
+                  <p class="leccard-text">Pythonの文字列の操作の仕方、リストの作成と初期化操作の仕方、条件分岐での比較判定を学習します</p>
+              </div>
+              <div class="leccard-link" style="background:#f7f7f7;">
+                  <span style="font-size:0.6em; color:#18acd5" >学習すること</span>
+                  <ul>
+                    <li><div class="icontrim"><img src="images/python-icon.svg"></div></li>
+                    <li><div class="icontrim"><img src="images/github-icon.svg"></div></li>
+                  </ul>
+              </div>
+          </section>
+      </div>
+
+      <div class="gallery-cell" style="padding-top:2em; background: #ffffff;">
+        <section class="leccard">
+              <img class="leccard-img" src="images/3.loop.jpeg" alt="">
+              <div class="leccard-content">
+                  <h1 class="leccard-title">第3回&nbsp;辞書・繰り返し・関数<br></h1>
+                  <p class="leccard-text">Pythonの辞書タイプ、プログラミング一般に大切な繰り返し（ループ）、プログラムを構造化する関数の定義について学習します</p>
+              </div>
+              <div class="leccard-link" style="background:#f7f7f7;">
+                  <span style="font-size:0.6em; color:#18acd5" >学習すること</span>
+                  <ul>
+                    <li><div class="icontrim"><img src="images/python-icon.svg"></div></li>
+                    <li><div class="icontrim"><img src="images/github-icon.svg"></div></li>
+                  </ul>
+              </div>
+          </section>
+      </div>
+
+      <div class="gallery-cell" style="padding-top:2em; background: #ffffff;">
+        <section class="leccard">
+              <img class="leccard-img" src="images/4.iterator.jpeg" alt="">
+              <div class="leccard-content">
+                  <h1 class="leccard-title">第4回&nbsp;ファイル・イテレータ</h1>
+                  <p class="leccard-text">UNIXファイルシステムやPythonのファイル入出力、PlaywrightやGoogleシートの使い方を学習します</p>
+              </div>
+              <div class="leccard-link" style="background:#f7f7f7;">
+                  <span style="font-size:0.6em; color:#18acd5" >学習すること</span>
+                  <ul>
+                    <li><div class="icontrim"><img src="images/python-icon.svg"></div></li>
+                    <li><div class="icontrim"><img src="images/github-icon.svg"></div></li>
+                    <li><div class="icontrim"><img src="images/playwright.svg"></div></li>
+                    <li><div class="icontrim"><img style="height:30px;" src="images/googlesheet-icon.svg"></div></li>
+                  </ul>
+              </div>
+            </section>
+      </div>
+
+      <div class="gallery-cell" style="padding-top:2em; background: #ffffff;">
+        <section class="leccard">
+              <img class="leccard-img" src="images/5.numpy.jpeg" alt="">
+              <div class="leccard-content">
+                  <h1 class="leccard-title">第5回&nbsp;モジュール・Numpy</h1>
+                  <p class="leccard-text">Googleドライブを使って自作モジュールを読み込んだり、Numpyによる行列計算のやり方を学習します</p>
+              </div>
+              <div class="leccard-link" style="background:#f7f7f7;">
+                  <span style="font-size:0.6em; color:#18acd5" >学習すること</span>
+                  <ul>
+                    <li><div class="icontrim"><img src="images/python-icon.svg"></div></li>
+                    <li><div class="icontrim"><img src="images/github-icon.svg"></div></li>
+                  </ul>
+              </div>
+        </section>
+      </div>
+
+      <div class="gallery-cell" style="padding-top:2em; background: #ffffff;">
+        <section class="leccard">
+              <img class="leccard-img" src="images/6.higher-order-class.jpeg" alt="">
+              <div class="leccard-content">
+                  <h1 class="leccard-title">第6回&nbsp;内包表記・高階関数・クラス<br></h1>
+                  <p class="leccard-text">内包表記の書き方や、Pythonの関数の扱いや、クラスの定義、継承など基本的な操作</p>
+              </div>
+              <div class="leccard-link" style="background:#f7f7f7;">
+                  <span style="font-size:0.6em; color:#18acd5" >学習すること</span>
+                  <ul>
+                  <li><div class="icontrim"><img src="images/python-icon.svg"></div></li>
+                  <li><div class="icontrim"><img src="images/github-icon.svg"></div></li>
+                  </ul>
+              </div>
+            </section>
+      </div>
+
+      <div class="gallery-cell" style="padding-top:2em; background: #ffffff;">
+        <section class="leccard">
+              <img class="leccard-img" src="images/7.scikitlearn.png" alt="">
+              <div class="leccard-content">
+                  <h1 class="leccard-title">第7回&nbsp;線形回帰・LightGBM<br></h1>
+                  <p class="leccard-text">Playwrightでデータを収集しGoogleシートで入出力してScikit-Learnで線形回帰やLightGBMを学習します</p>
+              </div>
+              <div class="leccard-link" style="background:#f7f7f7;">
+                  <span style="font-size:0.6em; color:#18acd5" >学習すること</span>
+                  <ul>
+                  <li><div class="icontrim"><img src="images/python-icon.svg"></div></li>
+                  <li><div class="icontrim"><img src="images/github-icon.svg"></div></li>
+                  <li><div class="icontrim"><img src="images/playwright.svg"></div></li>
+                  <li><div class="icontrim"><img style="height:30px;" src="images/googlesheet-icon.svg"></div></li>
+                  <li><div class="icontrim"><img style="height:30px;" src="images/scikit-learn.svg"></div></li>
+                </ul>
+              </div>
+          </section>
+      </div>
+    </div>
+<!-- Carousel -->
+  </div>
+</div>
+
+<div class="yokonarabe">
+  <div style="margin:32pt;">
+    <div style="margin:auto;width:360px;">
+    <h2><strong>参加に必要なもの</strong></h2>
+    <h3>
+    <br>
+    主催者の承認<br>
+    <br>
+    承認には参加希望者を推薦してくれるひと<br>
+    <br>
+    週１回の学習会に参加できる<br>
+    <br>
+    コンピューターと回線を自由に使える<br>
+    <br>
+    学習会の妨げになる行為をしない<br>
+    </h3>
+    <center>
+    <a href="https://docs.google.com/forms/d/18DTpXCc-yDVJ_ROcB4NmYC4S2iZKtmiXI8PTWK24ZCU/edit"><img src="images/button.svg" style="width:270px;height:140px;text-align:center;"></a>
+    </center>
+    </div>
+  </div>
+  <div>
+    <img style="position:relative; top:50%; transform:translateY(-50%);" src="images/hifive_future.svg" >
+  </div>
+</div>
+
+
+<!-- copyright start-->
+<div class="yokonarabe">
+  <div class="single" >
+    <p style="text-valign:cneter;text-align:center;" >provided by ハイファイブ (<a href="https://twitter.com/hifive" target="_blank" style="color:#000;" >@wmgithub</a>) with <font style="color:#ff7377">&hearts;</font></p>
+  </div>
+</div>
+	<!-- copyright end-->
+</body>
+</html>
