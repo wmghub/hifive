@@ -231,6 +231,28 @@ a.card-link {
     color: #777;
 }
 
+<!-- プロフィール-->
+.profile-image {
+    margin: 16px 0 0;
+    text-align: center;
+}
+.profile-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+.heading-lv1 {
+    font-size: 32px;
+    font-style: italic;
+}
+.heading-lv2 {
+    font-size: 24px;
+}
+.heading-lv3 {
+    font-size: 20px;
+}
+<!-- プロフィール-->
+
 @media all and (min-width: 768px) {
     .lead {
       margin: auto;
@@ -510,9 +532,46 @@ a.card-link {
   </div>
 </div>
 
-<div class="yokonarabe">
-  <div style="margin:32pt;">
-    <div style="margin:auto;width:360px;">
+<div class="yokonarabe" style="background:#e7e7e7;" >
+  <div class="single" style="font-size:2.0em; margin-left:0.6em; margin-top:2.0em; background:#e7e7e7;">
+    <br>
+    <span style="font-weight:900; color:#053ec3;">学習会の講師陣のプロフィール</span>
+    <br>&nbsp;
+  </div>
+</div>
+<div class="yokonarabe" style="text-align:center; padding-bottom:10em; background:#e7e7e7;" >
+  <div style="width:100%; height:30em; margin-left:0.2em; margin-right:0.2em; text-align:center; background-color:#fff;">
+    <br>
+      <figure class="profile-image">
+        <img src="images/shii.svg" alt="shiiのプロフィール画像" width="160" height="160">
+      </figure>
+      <h2 class="heading-lv2 text-center">Shiori/SHII</h2>
+      <p class="text text-center">Java&nbsp;&nbsp;PHP&nbsp;&nbsp;Python</p>
+      <p class="text text-center">日本最高の最高学府卒業<br>もとリケジョ<br>進路の相談相手として女子に人気が高い<br>プログラミング言語も外国語も自在に操る</p>
+  </div>
+  <div style="width:100%; height:30em; margin-right:0.2em; text-align:center; background-color:#fff;">
+      <br>
+      <figure class="profile-image">
+        <img src="images/hacker.svg" alt="クロちゃんのプロフィール画像" width="160" height="160">
+      </figure>
+      <h2 class="heading-lv2 text-center">クロちゃん</h2>
+      <p class="text text-center">Python&nbsp;&nbsp;C/C++&nbsp;&nbsp;Perl&nbsp;&nbsp;AWK</p>
+      <p class="text text-center">D2課程在学中<br>研究で鍛えたプログラミングの腕はハッカー級<br>人生相談にものってくれるアニキ</p>
+  </div>
+  <div style="width:100%; height:30em; margin-right:0.2em; text-align:center; background-color:#fff;">
+    <br>
+      <figure class="profile-image">
+        <img src="images/modagao.svg" alt="modagaoプロフィール画像" width="160" height="160">
+      </figure>
+      <h2 class="heading-lv2 text-center">modagao</h2>
+      <p class="text text-center">Python&nbsp;&nbsp;&nbsp;Kotlin</p>
+      <p class="text text-center">機械学習に魅力と未来を感じて<br>モバイルから転向<br>プログラミング歴30年超のベテラン</p>
+  </div>
+</div>
+
+<div class="yokonarabe" style="background:#fff;">
+  <div style="margin:32pt; background:#fff;">
+    <div style="margin:auto; width:360px; background:#fff;">
     <h2><strong>参加に必要なもの</strong></h2>
     <h3>
     <br>
@@ -531,7 +590,7 @@ a.card-link {
     </center>
     </div>
   </div>
-  <div>
+  <div style="background:#fff;">
     <img style="position:relative; top:50%; transform:translateY(-50%);" src="images/hifive_future.svg" >
   </div>
 </div>
