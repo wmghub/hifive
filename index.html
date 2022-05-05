@@ -38,7 +38,7 @@ body {
 }
 .gallery-cell {
   width: 33%;
-  height: 620px;
+  height: 520px;
   margin-right: 10px;
   background: #24C2F9;
 //  counter-increment: gallery-cell;
@@ -84,7 +84,6 @@ body {
     line-height:2.00em;
     padding:1.2em;
     font-weight:900;
-    background:#e7e7e7;
   }
   .yokonarabe > div.single {
     width: 100%;
@@ -251,6 +250,86 @@ a.card-link {
 .heading-lv3 {
     font-size: 20px;
 }
+
+@media all {
+  a.btn-yellow {
+    padding: 0.5em;
+    display: block;
+    color: #fff !important;
+    background: #edb777;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:16px;
+    border-radius: 3px;
+    text-align:center;
+    text-decoration:none !important;
+  }
+  a.btn-yellow:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: -3px 5px 0 0;
+    background: url("images/butterfly.svg") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  a.btn-yellow:hover {
+    background: #B87F4F;
+  }
+
+  a.btn-blue {
+    padding: 0.5em;
+    display: block;
+    color: #fff !important;
+    background: #6767ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:16px;
+    border-radius: 3px;
+    text-align:center;
+    text-decoration:none !important;
+  }
+  a.btn-blue:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: -3px 5px 0 0;
+    background: url("images/python-icon.svg") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  a.btn-blue:hover {
+    background: #3f3faf;
+  }
+
+  a.btn-cyan {
+    padding: 0.5em;
+    display: block;
+    color: #fff !important;
+    background: #47d7ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:16px;
+    border-radius: 3px;
+    text-align:center;
+    text-decoration:none !important;
+  }
+  a.btn-cyan:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: -3px 5px 0 0;
+    background: url("images/python-icon.svg") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  a.btn-cyan:hover {
+    background: #3f8fbf;
+  }
+}
 <!-- プロフィール-->
 
 @media all and (min-width: 768px) {
@@ -300,7 +379,7 @@ a.card-link {
   </div>
 </div>
 <br><br>
-<div class="yokonarabe" style="background:#e7e7e7;">
+<div class="yokonarabe">
   <div class="lead" style="margin:auto;">
     Pythonの基礎から独習できるようになるまでをサポートします<br>
     <span style="font-weight:900; color:#053ec3;">完全オンライン</span>、<span style="font-weight:900; color:#053ec3;">完全無料</span>です<br>
@@ -383,7 +462,7 @@ a.card-link {
 <div class="yokonarabe">
   <div class="single" >
 <!-- Carousel -->
-    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' style="margin-bottom: 40px;" >
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' style="margin-bottom: 20px;" >
       <div class="gallery-cell" style="padding-top:2em; background: #ffffff;">
         <section class="leccard">
               <img class="leccard-img" style="object-fit: contain;" src="images/python.svg" alt="">
@@ -532,46 +611,65 @@ a.card-link {
   </div>
 </div>
 
-<div class="yokonarabe" style="background:#e7e7e7;" >
-  <div class="single" style="font-size:2.0em; margin-left:0.6em; margin-top:2.0em; background:#e7e7e7;">
+<div class="yokonarabe">
+  <div class="single" style="font-size:2.0em; margin-left:1.2em; margin-top:0.8em;">
     <br>
     <span style="font-weight:900; color:#053ec3;">学習会の講師陣のプロフィール</span>
     <br>&nbsp;
   </div>
 </div>
-<div class="yokonarabe" style="text-align:center; padding-bottom:10em; background:#e7e7e7;" >
-  <div style="width:100%; height:30em; margin-left:0.2em; margin-right:0.2em; text-align:center; background-color:#fff;">
+<div class="yokonarabe" style="text-align:center; padding-bottom:6em;" >
+<div style="margin-left:4%; margin-right:2%;" >
+  <div style="width:100%; height:28em; text-align:center; background-color:#fff;">
     <br>
       <figure class="profile-image">
         <img src="images/shii.svg" alt="shiiのプロフィール画像" width="160" height="160">
       </figure>
       <h2 class="heading-lv2 text-center">Shiori/SHII</h2>
-      <p class="text text-center">Java&nbsp;&nbsp;PHP&nbsp;&nbsp;Python</p>
-      <p class="text text-center">日本最高の最高学府卒業<br>もとリケジョ<br>進路の相談相手として女子に人気が高い<br>プログラミング言語も外国語も自在に操る</p>
+      <p style="text-align:left; margin-left:2.2em; margin-right:2.2em;">日本最高の最高学府卒。もとリケジョ。プログラミング言語も外国語も自在に操る。進路の相談相手として女子に人気が高い。<br>
   </div>
-  <div style="width:100%; height:30em; margin-right:0.2em; text-align:center; background-color:#fff;">
+  <div style="width:100%; height:5.2em; text-align:center;">
+      <div style="margin-top:1.4em; margin-left:2.2em; margin-right:2.2em;">
+        <a href="https://docs.google.com/forms/d/1l3Ffyd-bWWud1S39ixfzKhr_VTKw3Q--ymAii1hkyuQ/edit" class="btn-yellow" style="text-align:center;" >推薦をお願いする</a>
+        <span style="color:#f7377f;">&hearts;女子のみ&hearts;</span>
+      </div>
+  </div>
+</div>
+<div style="margin-left:2%; margin-right:2%;" >
+  <div style="width:100%; height:28em; text-align:center; background-color:#fff;">
       <br>
       <figure class="profile-image">
         <img src="images/hacker.svg" alt="クロちゃんのプロフィール画像" width="160" height="160">
       </figure>
       <h2 class="heading-lv2 text-center">クロちゃん</h2>
-      <p class="text text-center">Python&nbsp;&nbsp;C/C++&nbsp;&nbsp;Perl&nbsp;&nbsp;AWK</p>
-      <p class="text text-center">D2課程在学中<br>研究で鍛えたプログラミングの腕はハッカー級<br>人生相談にものってくれるアニキ</p>
+      <p style="text-align:left; margin-left:2.2em; margin-right:2.2em;">D2課程在学中。研究で鍛えたプログラミングの腕はハッカー級。人生相談にものってくれる圧なし気さく系アニキ。<br>
   </div>
-  <div style="width:100%; height:30em; margin-right:0.2em; text-align:center; background-color:#fff;">
+  <div style="width:100%; height:5.2em; text-align:center;">
+      <div style="margin-top:1.4em; margin-left:2.2em; margin-right:2.2em;">
+        <a href="https://docs.google.com/forms/d/1VmMLM6h0PEmCy4vm1jWiX7to28Xe7aKeRROhsEFWGf4/edit" class="btn-blue" style="text-align:center;" >推薦をお願いする</a>
+      </div>
+  </div>
+</div>
+<div style="margin-left:2%; margin-right:4%;" >
+  <div style="width:100%; height:28em; text-align:center; background-color:#fff;">
     <br>
       <figure class="profile-image">
         <img src="images/modagao.svg" alt="modagaoプロフィール画像" width="160" height="160">
       </figure>
       <h2 class="heading-lv2 text-center">modagao</h2>
-      <p class="text text-center">Python&nbsp;&nbsp;&nbsp;Kotlin</p>
-      <p class="text text-center">機械学習に魅力と未来を感じて<br>モバイルから転向<br>プログラミング歴30年超のベテラン</p>
+      <p style="text-align:left; margin-left:2.2em; margin-right:2.2em;">機械学習に魅力と未来を感じてモバイルから転向。プログラミング歴20年超のベテラン。</p>
+  </div>
+  <div style="width:100%; height:5.2em; text-align:center;">
+      <div style="margin-top:1.4em; margin-left:2.2em; margin-right:2.2em;">
+        <a href="https://docs.google.com/forms/d/18DTpXCc-yDVJ_ROcB4NmYC4S2iZKtmiXI8PTWK24ZCU/edit" class="btn-cyan" style="text-align:center;" >推薦をお願いする</a>
+      </div>
   </div>
 </div>
+</div>
 
-<div class="yokonarabe" style="background:#fff;">
-  <div style="margin:32pt; background:#fff;">
-    <div style="margin:auto; width:360px; background:#fff;">
+<div class="yokonarabe">
+  <div style="margin:32pt;">
+    <div style="margin:auto; width:360px;">
     <h2><strong>参加に必要なもの</strong></h2>
     <h3>
     <br>
@@ -590,7 +688,7 @@ a.card-link {
     </center>
     </div>
   </div>
-  <div style="background:#fff;">
+  <div>
     <img style="position:relative; top:50%; transform:translateY(-50%);" src="images/hifive_future.svg" >
   </div>
 </div>
